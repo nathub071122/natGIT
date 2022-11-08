@@ -135,10 +135,10 @@ public class FileFilterLambdaEx {
 //      LAMBDA 1 (with legacy code): for accept(File pathname) of FileFilter interface
         File[] files = directoryFile.listFiles(pathName -> pathName.getName().endsWith(".java"));
 //      LAMBDA 2 (with modern code) : for void accept(T t); of Consumer<T> in java.util.function package.
-        List<File> listOfFiles1 = Arrays.asList(files);
-        listOfFiles1.add(null);
-        listOfFiles1.forEach(file -> System.out.println(file.getName()));
-//        Arrays.asList(files).forEach(file -> System.out.println(file.getName()));
+//        List<File> listOfFiles1 = Arrays.asList(files);
+//        listOfFiles1.add(null);
+//        listOfFiles1.forEach(file -> System.out.println(file.getName()));
+        Arrays.asList(files).forEach(file -> System.out.println(file.getName()));
     }
 }
 
