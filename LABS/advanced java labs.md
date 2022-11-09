@@ -34,8 +34,10 @@ public class ComparatorLambda {
 
 
 ```
+:beginner: _**Stream API**_  
 
-:one: _Stream API_
+
+:three: _Stream API_
 ```java
 package com.demo.java8;
 
@@ -53,10 +55,13 @@ public class CountryData {
   
 :beginner: _**JDBC**_  
 
-:one: _User Story_ : As a user I would like to display the movie title, language and category in the below format. 
+:four: _User Story_ : 
 
-Hint : Use Jons  
+4.1 As a user I would like to display the movie title, language and category in the below format. 
+
+Hint : Use Joins  
 
 ![](movie.png)  
 
 
+4.2  As a user I would like to display the movie title, language and category in the below format by accepting language and category from the user (hard code values) using PreparedStatement.
