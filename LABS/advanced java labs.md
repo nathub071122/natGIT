@@ -66,9 +66,11 @@ Hint : Use Joins
 
 4.2  As a user I would like to display the movie title, language and category in the below format by accepting language and category from the user (hard code values) using PreparedStatement.
 
-4.3  As a user I would like to display the movie title, language and category in the below format by accepting both language and category or only language or category from the user (hard code values) and passing them as parameters to the procedure below.
+4.3  As a user I would like to display the movie title, language and category in a tabular format by accepting both the beginning characters of a movie and category or only beginning characters or category from the user (scanner not necessary) and passing them as parameters to the procedure below.
+
+<!-- HINT USE WILDCARD IN SQL (LIKE 'A%') -->
 ````sql
-CREATE PROCEDURE GET_MOVIE_DETAILS2(LANGUAGE_IN CHAR(50), CATEGORY_NAME_IN CHAR(50))
+CREATE PROCEDURE GET_MOVIE_DETAILS2(TITLE_IN CHAR(50), CATEGORY_NAME_IN CHAR(50))
 BEGIN
     SELECT FILM.TITLE, LANGUAGE.NAME AS 'LANGUAGE', CATEGORY.NAME AS 'CATEGORY'
     FROM FILM
