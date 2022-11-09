@@ -33,3 +33,23 @@ END;
 
 CALL GET_MOVIE_DETAILS1;
 CALL GET_MOVIE_DETAILS2('Comedy');
+
+
+
+DROP PROCEDURE GET_MOVIE_DETAILS3;
+CREATE PROCEDURE GET_MOVIE_DETAILS3(TITLE_IN CHAR(50), CATEGORY_NAME_IN CHAR(50))
+BEGIN
+#     USE IF ELSE
+    select f.title as TITLE, l.name AS LANGUAGE, c.name AS CATEGORY
+    from film f inner join film_category fc on f.film_id=fc.film_id
+                inner join category c on fc.category_id=c.category_id
+                inner join language l on f.language_id=l.language_id
+    where f.title like  CONCAT(TITLE_IN,'%') and c.name = category_name_in;
+END;
+
+CALL GET_MOVIE_DETAILS3('Comedy');
+
+CALL GET_MOVIE_DETAILS3('A','ACTION');
+CALL GET_MOVIE_DETAILS3('A','COMEDY');
+CALL GET_MOVIE_DETAILS3('','COMEDY');
+CALL GET_MOVIE_DETAILS3('A','');
