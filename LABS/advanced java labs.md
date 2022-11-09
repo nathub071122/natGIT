@@ -63,7 +63,7 @@ Hint : Use Joins
 
 ![](movie.png)  
 
-
+:eye: *Explore PreparedStatement*  
 4.2  As a user I would like to display the movie title, language and category in the below format by accepting language and category from the user (hard code values) using PreparedStatement.
 
 4.3  As a user I would like to display the movie title, language and category in a tabular format by accepting both the beginning characters of a movie and category or only beginning characters or category from the user (scanner not necessary) and passing them as parameters to the procedure below.
