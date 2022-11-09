@@ -51,3 +51,12 @@ public class CountryData {
 
 ```
   
+:beginner: _**JDBC**_  
+
+:one: _User Story_ : As a user I would like to display the movie title, language and category in the below format. 
+
+Hint : Use Jons  
+
+![](movie.png)  
+
+
