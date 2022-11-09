@@ -68,7 +68,8 @@ Hint : Use Joins
 
 4.3  As a user I would like to display the movie title, language and category in a tabular format by accepting both the beginning characters of a movie and category or only beginning characters or category from the user (scanner not necessary) and passing them as parameters to the procedure below.
 
-<!-- HINT USE WILDCARD IN SQL (LIKE 'A%') -->
+<!-- HINT USE WILDCARD IN SQL (LIKE 'A%') 
+USE ? MARK(S) IN THE PROCEDURE CALL FOR JAVA-->
 ````sql
 CREATE PROCEDURE GET_MOVIE_DETAILS2(TITLE_IN CHAR(50), CATEGORY_NAME_IN CHAR(50))
 BEGIN
