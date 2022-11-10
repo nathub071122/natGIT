@@ -58,7 +58,7 @@ public class ActorsChallenge {
     public static void main(String... args)  {
         System.out.println("THE ACTORS DASHBOARD!");
         System.out.println("**********************");
-        //1. CREATE THE ACTORS MODEL IN Actor.java
+        //1. CREATE THE Actor MODEL IN Actor.java
         List<Actor> actors = new ArrayList<>();
 
         try (
