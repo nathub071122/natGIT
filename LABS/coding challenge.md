@@ -48,7 +48,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class CollectorsExample {
+public class ActorsChallenge {
 
     public static void main(String... args)  {
         System.out.println("THE ACTORS DASHBOARD!");
