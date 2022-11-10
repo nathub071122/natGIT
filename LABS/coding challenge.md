@@ -1,6 +1,3 @@
-THE ACTORS CHALLENGE
---------------------
-
 THE ACTORS DASHBOARD!
 **********************
 Actor [Jim, 5]
