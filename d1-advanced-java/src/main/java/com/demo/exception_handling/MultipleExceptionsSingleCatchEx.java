@@ -15,6 +15,11 @@ public class MultipleExceptionsSingleCatchEx {
         }
 
         catch(NullPointerException | ArithmeticException | ArrayIndexOutOfBoundsException  exception) {
+//IP
+            //  Write the logic to test the type of exception and accordingly print a message.
+//  If arithmetic : print "Check numbers to be a non zero value
+//  If null pointer : print "Check object for null ....
+//            If AIOOBE : print "Check the index to be within the bounds.
             System.out.println("Any RuntimeException.........");
             System.out.println(exception);
             System.out.println(exception.getMessage());

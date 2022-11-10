@@ -52,7 +52,7 @@ public class CountryData {
 }
 
 ```
-  
+
 :beginner: _**JDBC**_  
 
 :four: _User Story_ : 
@@ -70,7 +70,7 @@ Hint : Use Joins
 
 <!-- HINT USE WILDCARD IN SQL (LIKE 'A%') 
 USE ? MARK(S) IN THE PROCEDURE CALL FOR JAVA-->
-````sql
+```sql
 CREATE PROCEDURE GET_MOVIE_DETAILS2(TITLE_IN CHAR(50), CATEGORY_NAME_IN CHAR(50))
 BEGIN
     SELECT FILM.TITLE, LANGUAGE.NAME AS 'LANGUAGE', CATEGORY.NAME AS 'CATEGORY'
@@ -84,12 +84,11 @@ END;
 
 CALL GET_MOVIE_DETAILS1;
 CALL GET_MOVIE_DETAILS2('Comedy');
+
 ```
+:point_right: Exception Handling
 
-
-point_right : Exception Handling
-
-```java
+``` java
 package com.demo.exception_handling;
 
 public class MultipleExceptionsSingleCatchEx {
