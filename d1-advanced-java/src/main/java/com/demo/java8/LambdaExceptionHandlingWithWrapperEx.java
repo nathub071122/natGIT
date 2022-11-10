@@ -9,8 +9,6 @@ public class LambdaExceptionHandlingWithWrapperEx {
 //      exceptionHandlingInLambda();
         exceptionHandlingInLambdaWithwrapper();
     }
-
-
     private static void exceptionHandlingInLambda() {
         List<Integer> scores = Arrays.asList(150,180,120,140);
         List<Integer> scores2 = Arrays.asList(150,0,120,140);
@@ -41,12 +39,14 @@ public class LambdaExceptionHandlingWithWrapperEx {
     }
 
     private static void exceptionHandlingInLambdaWithwrapper() {
-        List<Integer> scores = Arrays.asList(150,180,120,140);
+        //ENHANCEMENT LAB : EFFECTIVELY IMPLEMENT NULLPOINTEREXCETPION  / SCORECANNOTBENEGATIVEEXCEPTION(CHECKED) / ALL OTHER EXCPETIONS
+        List<Integer> scores = Arrays.asList(150,-50,null,140);
         List<Integer> scores2 = Arrays.asList(150,0,120,140);
         List<Integer> scores3 = Arrays.asList(150,0,120,140);
 //        conciseness of the lambdo had gone for a toss.....
         Consumer<Integer> scoreConsumer = score -> System.out.println(500 / score);
         scores.forEach(wrapperForLamdaWithArithmeticException(scoreConsumer));
+        System.out.println("**********************************");
         System.out.println("Compact code.....");
         scores2.forEach(wrapperForLamdaWithArithmeticException(scoreConsumer));
         System.out.println("Still Compact code.....");
