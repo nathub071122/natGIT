@@ -9,13 +9,19 @@ Actor [Joy, 5]
 Actor [Allen, 2]
 Actor [Jill, 5]
 ```
+
+```
 **********************
 Actor with least movies acted : Actor [Kate, 1]
 Actor with most movies acted : Actor [John, 6]
+```
 **********************
+
+```
 Moives acted and actors : {1=Kate, 2=Will, Allen, 5=Jim, Joy, Jill, 6=John}
 ***********************
 
+```
 :books: **Resources**  
 
 
