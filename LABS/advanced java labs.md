@@ -239,7 +239,7 @@ public class LambdaExceptionHandlingWithWrapperEx {
 :books: **Java 11**  
 
 :one: _String : Implement any 5 new methods of String class in java 11_  
-:two: _File Handling : Implement any 2 method of Files class._
+:two: _File Handling : Implement any 2 method of Files class._  
 :three: _Functional Programming : Implement Predicate.not with String.isBlank_  
 :four: _Type Inference : Use local variables in lambda_  
 :five: _Collections API : Convert collection to an array using toArray method_  
