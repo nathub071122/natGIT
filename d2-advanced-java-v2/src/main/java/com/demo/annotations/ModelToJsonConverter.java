@@ -16,5 +16,4 @@ public class ModelToJsonConverter {
             throw new JsonSerializationException("Json Serialization not possible on " + clazz.getSimpleName() + " class. For serialization annotate the class with JsonSerializable");
         }
     }
-    //to del
 }
