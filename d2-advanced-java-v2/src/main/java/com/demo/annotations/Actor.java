@@ -9,6 +9,7 @@ public class Actor {
     private String firstName;
     @JsonElement
     private String lastName;
+    @JsonElement(key = "moviesActed")
     private String noOfMoviesActed;
 
     private String language;
