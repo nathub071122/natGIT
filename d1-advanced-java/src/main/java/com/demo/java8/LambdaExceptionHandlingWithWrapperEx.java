@@ -67,8 +67,18 @@ public class LambdaExceptionHandlingWithWrapperEx {
         };
         return scoreConsumerWithArithmeticExceptionHandlingCapabilites;
     }
-
-
+// Different Types.... different exceptions.....
+    static <T> Consumer<T> wrapperForLamdaWithArithmeticExceptionCompact(Consumer<T> scoreConsumer) {
+        //wrapping the consumer for excpetion handling capabilities....
+        Consumer<T> scoreConsumerWithArithmeticExceptionHandlingCapabilites = (score) -> {
+            try {
+                scoreConsumer.accept(score);
+            } catch (ArithmeticException arithmeticException) {
+                System.out.println("Check for zero values : " + arithmeticException.getMessage());
+            }
+        };
+        return scoreConsumerWithArithmeticExceptionHandlingCapabilites;
+    }
 //    var parameterFunctionObject = function() {
 //        console.log("functional programming........")
 //    };

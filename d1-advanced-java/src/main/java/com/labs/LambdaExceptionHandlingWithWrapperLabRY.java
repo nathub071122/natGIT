@@ -24,7 +24,6 @@ public class LambdaExceptionHandlingWithWrapperLabRY {
                     throw new ScoreCannotBeNegativeExceptions("Negative integer!");
                 scoreConsumer.accept(scores);
 
-
             } catch (NullPointerException | ArithmeticException | ScoreCannotBeNegativeExceptions exception) {
                 if (exception instanceof ArithmeticException) {
                     System.out.println("ArithmeticException");
