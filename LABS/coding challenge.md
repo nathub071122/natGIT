@@ -27,13 +27,13 @@ Moives acted and actors : {1=Kate, 2=Will, Allen, 5=Jim, Joy, Jill, 6=John}
 
 ```text
 The actors.txt file contents
-Jim 5
-John 6
-Will 2
-Kate 1
-Joy 5
-Allen 2
-Jill 5
+jim 5
+john 6
+will 2
+kate 1
+joy 5
+allen 2
+jill 5
 ```
 
 ----------------------------
