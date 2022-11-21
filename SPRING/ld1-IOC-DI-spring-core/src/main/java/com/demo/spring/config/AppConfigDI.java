@@ -5,9 +5,11 @@ import com.demo.spring.service.PaymentGatewayService;
 import com.demo.spring.service.PaymentGatewayServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfigDI {
     @Bean
+    @Scope("prototype")
     DigitalPayment digitalPayment(){
 
         DigitalPayment digitalPayment = new DigitalPaymentImpl();

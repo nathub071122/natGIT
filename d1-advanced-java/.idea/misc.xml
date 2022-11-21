@@ -6,7 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../SPRING/ld1-IOC-DI-spring-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../SPRING/ld2-IOC-DI-spring-core-xml-config/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../SPRING/ld1-IOC-DI-spring-core/ld2-IOC-DI-spring-core-xml/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />

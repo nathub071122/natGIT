@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    container tag-->
+    <bean name="paymentGatewayService" class="com.demo.spring.service.PaymentGatewayServiceImpl">
+        <constructor-arg index="0" ref="digitalPayment"/>
+    </bean>
+<!--    TRY SETTER BASED DEPENDENCY INJECTION-->
+<!--  CREATE THE DIGITALPAYMENT BEAN  -->
+<!--    empty tag-->
+    <bean name="digitalPayment" class="com.demo.spring.service.DigitalPaymentImpl" scope="prototype"/>
+</beans>
