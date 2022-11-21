@@ -28,3 +28,5 @@ interface Adder {
 interface Greeting {
     public void greet(String message);
 }
+
+
