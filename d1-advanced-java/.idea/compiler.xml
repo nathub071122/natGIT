@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="d1-advanced-java" />
+        <module name="ld1-IOC-DI-spring-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="d1-IOC-DI-spring" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
