@@ -6,7 +6,7 @@ import com.demo.spring.service.PaymentGatewayServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 @Configuration
-public class AppConfig {
+public class AppConfigDI {
     @Bean
     DigitalPayment digitalPayment(){
 
@@ -17,7 +17,9 @@ public class AppConfig {
     }
     @Bean
     PaymentGatewayService paymentGatewayService(){
-       PaymentGatewayService paymentGatewayService = new PaymentGatewayServiceImpl();
-        return paymentGatewayService;
+//        inject the digital payment into the payment gateway service
+       PaymentGatewayServiceImpl paymentGatewayServiceImpl = new PaymentGatewayServiceImpl();
+       paymentGatewayServiceImpl.setDigitalPayment(digitalPayment());
+        return paymentGatewayServiceImpl;
     }
 }
