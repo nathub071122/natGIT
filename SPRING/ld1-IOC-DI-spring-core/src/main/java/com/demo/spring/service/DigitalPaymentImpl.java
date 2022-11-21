@@ -1,4 +1,4 @@
-package com.demo.nospring.service;
+package com.demo.spring.service;
 public class DigitalPaymentImpl implements  DigitalPayment{
     @Override
     public void payDigitally(){
