@@ -20,6 +20,7 @@
   </properties>
 
   <dependencies>
+<!--    Configure JDBC-->
     <!--    SPRING IOC CONTAINER DEPENDENCY-->
     <dependency>
       <groupId>org.springframework</groupId>
