@@ -19,6 +19,8 @@ public class IOCApp {
 //        System.out.println("Using the payment gateway");
 //        // Directly creating and accessing the payment gateway service
 //        PaymentGatewayService paymentGatewayService = new PaymentGatewayServiceImpl();
-//        paymentGatewayService.pay();
+// Accessing the digital payment service created by spring
+PaymentGatewayService paymentGatewayService = applicationContext.getBean("paymentGatewayService",PaymentGatewayService.class);
+        paymentGatewayService.pay();
     }
 }
