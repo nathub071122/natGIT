@@ -7,6 +7,7 @@ import com.demo.spring.service.PaymentGatewayServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 public class IOCApp {
+    Object
     public static void main(String[] args) {
         System.out.println("Stand alone app!");
 //      Accessing the digital payment created by spring
