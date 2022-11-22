@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../SPRING/ld1-IOC-DI-spring-core/pom.xml" />
         <option value="$PROJECT_DIR$/../SPRING/ld2-IOC-DI-spring-core-xml-config/pom.xml" />
+        <option value="$PROJECT_DIR$/../SPRING BOOT/d1-spring-initializr/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

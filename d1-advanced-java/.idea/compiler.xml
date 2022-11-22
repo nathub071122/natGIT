@@ -8,11 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ld2-IOC-DI-spring-core-xml-config" />
         <module name="d1-advanced-java" />
+        <module name="d1-spring-initializr" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="d1-IOC-DI-spring" target="1.8" />
       <module name="ld2-IOC-DI-spring-core-xml" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="d1-spring-initializr" options="-parameters" />
+    </option>
   </component>
 </project>
