@@ -9,6 +9,7 @@
         <module name="ld2-IOC-DI-spring-core-xml-config" />
         <module name="d1-advanced-java" />
         <module name="d1-spring-initializr" />
+        <module name="lw1-efictishop-springboot-rest-api-L1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="d1-spring-initializr" options="-parameters" />
+      <module name="lw1-efictishop-springboot-rest-api-L1" options="-parameters" />
     </option>
   </component>
 </project>

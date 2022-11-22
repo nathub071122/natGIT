@@ -1,11 +1,14 @@
 package com.demo.controller;
+import com.demo.model.EmployeeModel;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.DispatcherServlet;
+
+import java.util.List;
+import java.util.Map;
 @RestController
-
-public class WelcomeController {
-
+@RequestMapping("/api/v0")
+public class EmployeeController {
     @GetMapping("/welcome")
     public String getWelcomeWithHTMLAsUI() {
         String htmlOutput = "<!DOCTYPE html>";
@@ -18,5 +21,20 @@ public class WelcomeController {
         htmlOutput += "</html>";
         return  htmlOutput;
     }
-}
 
+//    JAVA OBJECT SERIALIZED INTO JSON
+    @GetMapping("/employee")
+    public EmployeeModel getEmployee(){
+        EmployeeModel employeeModel = new EmployeeModel(1,"Ben",5000);
+        return employeeModel;
+    }
+
+//    IP : RETURN A LIST OF 3-5 EMPLOYEES
+    public List getEmployeeList() {
+        return null;
+    }
+    //    IP : RETURN A MAP OF 3-5 EMPLOYEES (EMPLOYEEID : KEY, EMPLOYEE INSTANCE : VALUE
+    public Map getEmployeeMap() {
+        return null;
+    }
+}
