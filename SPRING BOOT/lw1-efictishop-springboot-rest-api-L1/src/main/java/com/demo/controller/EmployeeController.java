@@ -28,13 +28,17 @@ public class EmployeeController {
         EmployeeModel employeeModel = new EmployeeModel(1,"Ben",5000);
         return employeeModel;
     }
-
 //    IP : RETURN A LIST OF 3-5 EMPLOYEES
     public List getEmployeeList() {
         return null;
     }
     //    IP : RETURN A MAP OF 3-5 EMPLOYEES (EMPLOYEEID : KEY, EMPLOYEE INSTANCE : VALUE
     public Map getEmployeeMap() {
+        return null;
+    }
+    //   EMPLOYEES OF DEPARTMENTS IT, FINANCE
+    //   LIST OF TWO MAPS (EACH MAP WILL CONTAIN THREE EMPLOYEES OF THE DEPARTMENT)
+    public List<Map> getDepartmentWiseEmployees() {
         return null;
     }
 }
