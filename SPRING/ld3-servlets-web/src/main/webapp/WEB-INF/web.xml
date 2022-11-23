@@ -19,6 +19,6 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>welcomeServlet</servlet-name>
-		<url-pattern>/welcomeXML</url-pattern>
+		<url-pattern>/welcomeServlet</url-pattern>
 	</servlet-mapping>
 </web-app>
