@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ld2-IOC-DI-spring-core-xml-config" />
+        <module name="d2-advanced-java-v2" />
         <module name="lw0-standalone-app" />
         <module name="d1-advanced-java" />
         <module name="d1-spring-initializr" />

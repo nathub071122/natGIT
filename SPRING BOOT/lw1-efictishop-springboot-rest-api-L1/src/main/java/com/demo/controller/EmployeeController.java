@@ -25,13 +25,13 @@ public class EmployeeController {
     }
 
     //    JAVA OBJECT SERIALIZED INTO JSON
-    @GetMapping("/employee")
-    public EmployeeModel getEmployeess(){
+    @GetMapping("/employees")
+    public EmployeeModel getEmployees(){
         EmployeeModel employeeModel = new EmployeeModel(1,"Ben",5000);
         return employeeModel;
     }
     //    IP : RETURN A LIST OF 3-5 EMPLOYEES
-    @GetMapping("/employees")
+    @GetMapping("/employees-list")
     public List getEmployeeList() {
 
         List <EmployeeModel> employeeModelList = new ArrayList<>();
