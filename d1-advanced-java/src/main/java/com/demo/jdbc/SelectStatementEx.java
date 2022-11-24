@@ -60,6 +60,7 @@ public class SelectStatementEx {
             System.out.println("Driver loaded successfully.....");
 //            https <protocol> : set of rules governing the transfer of data
 //            <protocol><subprotocol><url>
+//            Configuration inside the application.
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SAKILA","root","mysql");
             System.out.println("Connected!");
             Statement statement = connection.createStatement();

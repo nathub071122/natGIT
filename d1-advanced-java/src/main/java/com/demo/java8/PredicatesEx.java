@@ -13,7 +13,7 @@ public class PredicatesEx {
 
         List<String> selectedCountries = new ArrayList<>();
 //        stream.peek(System.out::println)
-         stream       .filter(predicate1.or(predicate))
+        stream.filter(predicate1.or(predicate))
                 .forEach(selectedCountries::add);
         System.out.println(selectedCountries);
     }

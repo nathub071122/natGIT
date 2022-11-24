@@ -17,6 +17,7 @@ public class EmployeeControllerDb {
         System.out.println("GET ALL EMPLOYEES FROM REPOSITORY");
         List employeesList = null;
         employeesList = employeeRepository.findAll();
+        employeesList.forEach((employee)-> {System.out.println(employee);});
         return employeesList;
     }
     @PostMapping("/employees")
