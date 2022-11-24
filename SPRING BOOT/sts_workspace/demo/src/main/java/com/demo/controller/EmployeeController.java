@@ -23,7 +23,7 @@ public class EmployeeController {
         htmlOutput += "<html>";
         htmlOutput += "<head><title>Welcome to the Web</title></head>";
         htmlOutput += "<body><h1>This demo is a from spring boot and REST API ....</h1>" +
-                "<h1 style='color:red;font-weight:bold'>Ensures developer productivity!</h1> <br/> " +
+                "<h1 style='color:orange;font-weight:bold'>Ensures developer productivity!</h1> <br/> " +
                 " Enter text to search :  <input type = 'text' value=></input> <br/>" +
                 " <input type='Submit' value='Search'></input>";
         htmlOutput += "</html>";
