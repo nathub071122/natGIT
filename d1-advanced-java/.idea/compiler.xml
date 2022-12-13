@@ -9,7 +9,6 @@
         <module name="ld2-IOC-DI-spring-core-xml-config" />
         <module name="d2-advanced-java-v2" />
         <module name="d1-spring-initializr" />
-        <module name="d1-service-discovery" />
         <module name="md1-service-discovery" />
         <module name="lw0-standalone-app" />
         <module name="d1-advanced-java" />
@@ -18,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="d1-IOC-DI-spring" target="1.8" />
+      <module name="d1-service-discovery" target="1.8" />
       <module name="ld2-IOC-DI-spring-core-xml" target="17" />
     </bytecodeTargetLevel>
   </component>
