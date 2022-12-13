@@ -1,4 +1,4 @@
-package com.example.lw0standaloneapp;
+package com.demo.lw0standaloneapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication

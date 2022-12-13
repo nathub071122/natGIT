@@ -1,4 +1,4 @@
-package com.example.lw0standaloneapp;
+package com.demo.lw0standaloneapp;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
