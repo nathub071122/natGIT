@@ -16,3 +16,4 @@
     	return authenticatedBoolean;
     }
 ```
+:eight: _Perfom client side load balancing with multiple microservices_  
