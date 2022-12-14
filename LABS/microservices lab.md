@@ -3,5 +3,6 @@
 :three: _Register them in Eureka server_  
 :four: _Complete the Registration Microservice_  
 :five: _Implement hashing of password in the service layer_  
-
+:six: _Use Postman to register_ 
+:six: _Perform the logic to validate the user_ 
 
