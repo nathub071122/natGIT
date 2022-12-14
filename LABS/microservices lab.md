@@ -5,4 +5,14 @@
 :five: _Implement hashing of password in the service layer_  
 :six: _Use Postman to register_ 
 :six: _Perform the logic to validate the user_ 
-
+:seven: _Modify the below method_ 
+1. It shoud accept the registration object and perform the validation
+2. The Registration object should be posted from postman. 
+```java
+    @GetMapping("/registrations/{email}/{password}")
+    public Boolean authenticate(@PathVariable(value="email") String email,  @PathVariable(value="password") String password) {
+    	Boolean authenticatedBoolean = registrationService.isValidUser(email, password);
+    	System.out.println("REgistration Controller - authenticate : " + authenticatedBoolean);
+    	return authenticatedBoolean;
+    }
+```
