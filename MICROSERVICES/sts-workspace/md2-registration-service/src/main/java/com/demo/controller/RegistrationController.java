@@ -35,7 +35,7 @@ public class RegistrationController {
     @GetMapping("/registrations/{email}/{password}")
     public Boolean authenticate(@PathVariable(value="email") String email,  @PathVariable(value="password") String password) {
     	Boolean authenticatedBoolean = registrationService.isValidUser(email, password);
-    	System.out.println("REgistration Controller - authenticate : " + authenticatedBoolean);
+    	System.out.println("Registration Controller - authenticate : " + authenticatedBoolean);
     	return authenticatedBoolean;
     }
 }

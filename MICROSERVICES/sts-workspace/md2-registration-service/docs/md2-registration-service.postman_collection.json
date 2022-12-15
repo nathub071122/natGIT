@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "a24e0f78-5ccc-41ac-9a8f-a110b49ba843",
+		"name": "md2-registration-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registrations/{email}/{password} [Client App]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":0,\r\n   \"name\":\"Rambo\",\r\n   \"salary\":5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrations/{email}/{password} [ClientService]",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7075/api/v3/registrations/admin1@email.com/passthewords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"api",
+						"v3",
+						"registrations",
+						"admin1@email.com",
+						"passthewords"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
