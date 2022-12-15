@@ -18,3 +18,4 @@
 ```
 :eight: _Perfom client side load balancing with multiple microservices_  
 :nine: _Create a client service, fetch the course details and display them on the browser / postman_  
+:one::zero: _Implement the API gateway and fetch course details uisng API Gateway with load balancing_  
