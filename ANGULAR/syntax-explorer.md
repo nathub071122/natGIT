@@ -12,12 +12,17 @@ platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.log(err
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 @NgModule({
+    // The imports array of the AppModule declares all the modules that needs to be imported and used inside this module.
+    // import java.lang.*;
  imports : [
     BrowserModule
  ],
+
+//  The declarations array declares the components that are placed inside this module.
  declarations:[
     AppComponent
  ],
+//  The boostrap array specifice the component to be loaded initially.
  bootstrap : [
     AppComponent
  ]
@@ -76,4 +81,39 @@ exprot const products = [
     description: ''
   }
 ];
+```
+
+
+:beginner: _**USING ROUTER**_  
+
+_AppModule (app.module.ts)_  
+```ts
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {RouterModule} from '@angular/router';
+@NgModule({
+    // The imports array of the AppModule declares all the modules that needs to be imported and used inside this module.
+    // import java.lang.*;
+ imports : [
+    BrowserModule,
+    RouterModule.forRoot([
+        {
+            path :'',
+            component:ProductListComponent
+        }
+    ])
+ ],
+
+//  The declarations array declares the components that are placed inside this module.
+ declarations:[
+    AppComponent
+ ],
+//  The boostrap array specifice the component to be loaded initially.
+ bootstrap : [
+    AppComponent
+ ]
+})
+export class AppModule {
+
+}
 ```
