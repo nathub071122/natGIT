@@ -20,3 +20,8 @@
 :eye: *https://angularfz539e-s3er--4200--b5037fed.local-credentialless.webcontainer.io/book*  
 
 :key: **Create 5 different routes**  
+
+:three: __Create Hide and Show buttons for the 4 images in the the parent component.
+1. When the hide is clicked, hide the image.
+2. When the show is clicked, show the image.
+:bulb: Can also pass css styles from parent to child and let the child apply the styles.  
