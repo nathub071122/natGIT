@@ -120,3 +120,12 @@ export class AppModule {
 
 :beginner: _**Creating Services**_  
 
+```ts
+@Injectable({
+   providedIn :'root'
+})
+export class CartService {
+
+}
+```
+
