@@ -1,0 +1,38 @@
+<h2>Products</h2>
+This is the products list component.
+<!-- for(element : collection) {
+  do something
+} -->
+<!-- *ngFor is the structural directive -->
+<div *ngFor="let product of products">
+  <h3>
+    <a [title] = "product.name + ' details'"
+    [routerLink] = "['/products', product.id]">
+    <!-- {{ string interpolation }} -->
+    {{product.id}} - {{product.name}}
+    </a>
+  </h3>
+    <p *ngIf='product.description'>
+      Description : {{product.description}}
+    </p>
+    <p>
+      Price : {{product.price}}
+    </p>
+    <!-- event bidning binds events like user clicks to the logic (function call) in the component ts -->
+<button type="button" (click) = "share()" > Share Product
+</button>
+<!-- passing input to child -->
+<app-product-alerts 
+[product] = "product"
+(notifyEventEmitterInChild) = "onNotifyHandlerInParent()"
+>
+<!-- handling the event from the child -->
+</app-product-alerts>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

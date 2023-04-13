@@ -1,0 +1,4 @@
+<p *ngIf="product && product.price > 700">
+  <!-- <button type="button">Notify Me {{product | json | uppercase }}</button> -->
+    <button type="button" (click) = "notifyEventEmitterInChild.emit()">Notify Me </button>
+</p>
