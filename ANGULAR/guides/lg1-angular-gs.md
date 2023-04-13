@@ -27,6 +27,9 @@ https://code.visualstudio.com/download
 :point_right: nodejs  
 
 https://nodejs.org/dist/v16.14.2/node-v16.14.2-x64.msi
+
+:point_right: GIT    
+
 https://git-scm.com/download/win
 
 :point_right: angular cli  
