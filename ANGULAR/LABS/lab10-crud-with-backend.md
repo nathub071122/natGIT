@@ -66,7 +66,8 @@
 3. Menu Item : Book Review
 4. Menu Item : Comments 
 
-:one::zero:  View and Delete Comments
+:one::zero:  CRUD operations with backend
 1. The administrator should be able to view all the reader's comments in a tabulated format.
 2. Should be able to update the comments.
-3. Shoud be able to delete the comments.
+3. Should be able to delete the comments.
+4. Should be able to create comments

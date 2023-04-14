@@ -7,7 +7,14 @@ import { Employee } from "../model/employee.model";
     providedIn: 'root'
 })
 export class EmployeeService {
-    baseUrl: string = "http://localhost:3000/employees";
+    // JSON SERVER REST AIP
+    // baseUrl: string = "http://localhost:3000/employees";
+    // SPRING BOOT REST API
+    baseUrl: string = "http://localhost:8080/api/v1/employees";
+
+    // Access to XMLHttpRequest at 'http://localhost:8080/api/v1/employees' from origin 'http://localhost:4200'
+    //  has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    
     constructor(private httpClient: HttpClient) {
     }
     getEmployees() {

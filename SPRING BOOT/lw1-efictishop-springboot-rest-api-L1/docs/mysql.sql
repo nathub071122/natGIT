@@ -6,3 +6,4 @@ create table employees_DEL (employee_id integer not null, first_name varchar(255
 create table hibernate_sequence_DEL (next_val bigint) engine=InnoDB
 SELECT * FROM HIBERNATE_SEQUENCE;
 INSERT INTO EMPLOYEES VALUES (100,'JOHN',50);
+INSERT INTO EMPLOYEES VALUES (102,'JOHNNY',500);
