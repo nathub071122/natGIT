@@ -71,3 +71,5 @@
 2. Should be able to update the comments.
 3. Should be able to delete the comments.
 4. Should be able to create comments
+
+:bell: You can choose to work out these requirements on your capstone as well.  
