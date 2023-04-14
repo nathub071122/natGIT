@@ -11,16 +11,22 @@ export class EmployeeService {
     constructor(private httpClient: HttpClient) {
     }
     getEmployees() {
+        //get
         return this.httpClient.get<Employee[]>(this.baseUrl);
     }
 
     createEmployee(employee: Employee) {
+        //post
         return this.httpClient.post(this.baseUrl, employee);
     }
     updateEmployee(id: number, employee: any): Observable<Object> {
+        //put
         return this.httpClient.get<Employee[]>(this.baseUrl);
     }
     deleteEmployee(id: number) {
-        return this.httpClient.delete<Employee[]>(this.baseUrl + "/" + id);
+        // //alert(id);
+        //alert(this.baseUrl+"/"+id);
+        //delete
+        return this.httpClient.delete<Employee>(this.baseUrl + "/" + id);
     }
 }

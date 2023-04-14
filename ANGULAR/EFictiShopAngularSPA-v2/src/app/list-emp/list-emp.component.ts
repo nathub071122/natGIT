@@ -21,14 +21,21 @@ export class ListEmpComponent implements OnInit {
     // Consume the employee Service
     // the special symbol game {{}} [] () ? ! * @ =>
     this.employeeService.getEmployees().subscribe((employeeData) => { this.employees = employeeData });
-      // function test(employeeData) {
-  //   this.employees = employeeData;
-  // }
+    // function test(employeeData) {
+    //   this.employees = employeeData;
+    // }
 
-  // (employeeData) =>   {this.employees = employeeData}
-  // employeeData =>   this.employees = employeeData
+    // (employeeData) =>   {this.employees = employeeData}
+    // employeeData =>   this.employees = employeeData
   }
- 
-  //other operations to be implemented create, update, delete
 
+  //other operations to be implemented create, update, delete
+  deleteEmployee(toDeleteEmployee: Employee): void {
+    //alert(JSON.stringify(toDeleteEmployee));
+    this.employeeService.deleteEmployee(toDeleteEmployee.id).subscribe((deletedEmployee) => {
+      //alert(JSON.stringify(deletedEmployee))} );
+      // sync the employee with the in-memory array
+      this.employees = this.employees.filter(deletedEmployee => deletedEmployee != toDeleteEmployee);
+    })
+  }
 }
