@@ -1,4 +1,4 @@
-:keyboard: **Labs : 4:35 - 5:00**  
+:keyboard: **Labs**  
 
 :one: _Create an angular app use components to display menu and books._
 
