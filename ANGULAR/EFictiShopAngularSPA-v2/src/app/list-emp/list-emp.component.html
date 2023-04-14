@@ -1,1 +1,29 @@
 
+<div class="container">
+    <br/>
+    <h5>Employee Details</h5>
+    <div>
+        <div  style = "width:750px">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Remove</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let employee of employees">
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.salary}}</td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                        <td><button class="btn btn-warning">Update</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
