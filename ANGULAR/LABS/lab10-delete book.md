@@ -68,4 +68,5 @@
 
 :one::zero:  View and Delete Comments
 1. The administrator should be able to view all the reader's comments in a tabulated format.
-2. Shoud be able to delete the comments.
+2. Should be able to update the comments.
+3. Shoud be able to delete the comments.
