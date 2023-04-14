@@ -1,0 +1,20 @@
+<br>
+<h4>Login</h4>
+<br>
+<!-- bootstrap conainer class -->
+<div class ="container">
+<!-- Reactive forms, form Group -->
+<form [formGroup]="loginForm">
+   Login Id :
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="text" formControlName="loginid" ><br><br>
+  
+   Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="password" formControlName="password" ><br><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   <button class="btn btn-success" (click)="onSubmit()">Login</button>
+      <button class="btn btn-warning">Register</button>
+   <!-- <button class="btn btn-warning" routerLink="/register">Register</button> -->
+   <!-- <a class="nav-link">Employee List</a> -->
+</form>
+</div>
