@@ -20,6 +20,6 @@ alphabets, a digit, and a special character.
 :point_right:  The user should be able to login with his/her emailId and password  
 
 
-:eye: *If my microservices is not read?*  
+:eye: *in case the backend microservice is not ready then please*  
 :key: Use JSON Server    
   
