@@ -1,3 +1,7 @@
+:beginner: _**Lab 1:30 - 3:30**_  
+
+
+
 :keyboard: **US04: New Admin Registration**  
 
 
