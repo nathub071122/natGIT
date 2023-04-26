@@ -5,9 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,13 +33,12 @@ public class EmployeeController {
     @ResponseBody
     @GetMapping(value = "/employees", produces = {MediaType.APPLICATION_XML_VALUE})
     public EmployeeModel getEmployees(){
-        EmployeeModel employeeModel = new EmployeeModel(1,"Ben",5000);
-        return employeeModel;
+        return new EmployeeModel(1,"Ben",5000);
     }
     //    IP : RETURN A LIST OF 3-5 EMPLOYEES
     @ResponseBody
     @GetMapping(value="/employees-list", produces = {MediaType.APPLICATION_JSON_VALUE})
-    public List getEmployeeList() {
+    public List<EmployeeModel> getEmployeeList() {
 
         List <EmployeeModel> employeeModelList = new ArrayList<>();
         employeeModelList.add(new EmployeeModel(1,"Ben",5000));
@@ -51,9 +49,9 @@ public class EmployeeController {
     }
     //    IP : RETURN A MAP OF 3-5 EMPLOYEES (EMPLOYEEID : KEY, EMPLOYEE INSTANCE : VALUE
     @GetMapping("/employees-map")
-    public Map getEmployeeMap() {
+    public Map<Integer,EmployeeModel> getEmployeeMap() {
 
-        Map<Integer,EmployeeModel> map=new HashMap();
+        Map<Integer,EmployeeModel> map=new HashMap<>();
         //Adding elements to map
         map.put(1,new EmployeeModel(1,"Ben",5000));
         map.put(2,new EmployeeModel(1,"Ben",5000));
@@ -68,13 +66,13 @@ public class EmployeeController {
     @GetMapping("/employees-list-map")
     public List<Map<Integer,EmployeeModel>> getDepartmentWiseEmployees() {
 
-        Map<Integer,EmployeeModel> map=new HashMap();
+        Map<Integer,EmployeeModel> map=new HashMap<>();
         //Adding elements to map
         map.put(1,new EmployeeModel(1,"IT-Ben",5000));
         map.put(2,new EmployeeModel(2,"IT-Albert",5000));
         map.put(3,new EmployeeModel(3,"IT-Sin",5000));
 
-        Map<Integer,EmployeeModel> map2=new HashMap();
+        Map<Integer,EmployeeModel> map2=new HashMap<Integer,EmployeeModel>();
         //Adding elements to map
         map2.put(4,new EmployeeModel(4,"Finance-Benneth",5000));
         map2.put(5,new EmployeeModel(5,"Finance-Ken",6000));
