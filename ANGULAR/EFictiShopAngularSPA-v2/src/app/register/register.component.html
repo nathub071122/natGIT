@@ -1,30 +1,43 @@
 <div class="container" style="width:500px">
     <br>
     <h2>Admin Register Form</h2><br><br>
-    <form [formGroup]="registerForm" (ngSubmit) = "onSubmit()">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <div>
+
             <div class="form-group">
                 <label for="name">Admin Name : </label>
-                <input type="text" class="form-control" formControlName="adminName"><br>
+                <input type="text" class="form-control" formControlName="adminName"
+                    [ngClass]="{ 'is-invalid' : submitted && registerForm.controls['adminName'].errors}"><br>
+                <div *ngIf="submitted && registerForm.controls['adminName'].errors" class="invalid-feedback">
+                    <div *ngIf="registerForm.controls['adminName'].errors?.['required']">
+                        Admin Name is required
+                    </div>
+                    <div *ngIf="registerForm.controls['adminName'].errors?.['minlength']">
+                        Admin Name should atleast be 5 characters.
+                    </div>
+                    <div *ngIf="rfc['adminName'].errors?.['maxlength']">
+                        Admin Name should not be more than 20 characters..
+                    </div>
+                </div>
             </div>
-     
+            <br>
             <div class="form-group">
                 <label for="name">Email : </label>
                 <input type="text" class="form-control" formControlName="email"><br>
             </div>
-            
+            <br>
             <div class="form-group">
                 <label for="name">Phone : </label>
                 <input type="text" class="form-control" formControlName="phone"><br>
             </div>
-
+            <br>
             <div class="form-group">
                 <label for="name">Password : </label>
-                <input type="text" class="form-control" formControlName="password"><br>
+                <input type="password" class="form-control" formControlName="password"><br>
             </div>
         </div>
         <br>
-        <button  class="btn btn-primary">Register</button>
+        <button class="btn btn-primary">Register</button>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <button type="reset" class="btn btn-info">Clear</button>
     </form>
