@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ListEmpComponent } from './list-emp/list-emp.component';
 import { LoginComponent } from './login/login.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AddEmpComponent } from './add-emp/add-emp.component';
     ListEmpComponent,
     LoginComponent,
     AddEmpComponent,
+    RegisterComponent,
 
    ],
   imports: [

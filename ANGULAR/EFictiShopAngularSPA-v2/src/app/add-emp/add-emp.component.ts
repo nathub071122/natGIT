@@ -10,7 +10,6 @@ import { EmployeeService } from '../service/employee.service';
 export class AddEmpComponent implements OnInit {
   addForm?: FormGroup;
   constructor(private formBuilder: FormBuilder, private employeeService: EmployeeService) { }
-
   ngOnInit(): void {
     this.addForm = this.formBuilder.group({
       id: [0],
@@ -18,7 +17,6 @@ export class AddEmpComponent implements OnInit {
       salary: []
     })
   }
-
   saveEmployee() {
     console.log("Employee details sent to server...");
     console.log(this.addForm.value);

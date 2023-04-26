@@ -1,0 +1,31 @@
+<div class="container" style="width:500px">
+    <br>
+    <h2>Admin Register Form</h2><br><br>
+    <form [formGroup]="registerForm" (ngSubmit) = "onSubmit()">
+        <div>
+            <div class="form-group">
+                <label for="name">Admin Name : </label>
+                <input type="text" class="form-control" formControlName="adminName"><br>
+            </div>
+     
+            <div class="form-group">
+                <label for="name">Email : </label>
+                <input type="text" class="form-control" formControlName="email"><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Phone : </label>
+                <input type="text" class="form-control" formControlName="phone"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Password : </label>
+                <input type="text" class="form-control" formControlName="password"><br>
+            </div>
+        </div>
+        <br>
+        <button  class="btn btn-primary">Register</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="reset" class="btn btn-info">Clear</button>
+    </form>
+</div>
