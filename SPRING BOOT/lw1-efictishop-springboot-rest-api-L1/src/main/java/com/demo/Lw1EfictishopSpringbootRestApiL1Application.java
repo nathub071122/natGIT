@@ -12,6 +12,5 @@ import org.springframework.context.annotation.Configuration;
 public class Lw1EfictishopSpringbootRestApiL1Application {
     public static void main(String[] args) {
         SpringApplication.run(Lw1EfictishopSpringbootRestApiL1Application.class, args);
-
     }
 }

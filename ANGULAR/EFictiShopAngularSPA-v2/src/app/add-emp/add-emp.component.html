@@ -1,0 +1,24 @@
+<div class="container" style="width:500px">
+    <br>
+    <h2>Add Employee Form</h2><br><br>
+    <form [formGroup]="addForm">
+        <div>
+            <div class="form-group">
+                <!-- <label for="id">Id : </label> -->
+                <input type="hidden" id="id" class="form-control" formControlName="id"><br>
+            </div>
+            <div class="form-group">
+                <label for="name">Name : </label>
+                <input type="text" id="name" class="form-control" formControlName="name"><br>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary : </label>
+                <input type="text" id="salary" class="form-control" formControlName="salary"><br>
+            </div>
+        </div>
+        <br>
+        <button (click)="saveEmployee()" class="btn btn-success">Save</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="reset" class="btn btn-info">Clear</button>
+    </form>
+</div>
