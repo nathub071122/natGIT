@@ -1,7 +1,6 @@
 :beginner: _**SET UP JAVA 11 & MAVEN**_  
 
 
-
 :point_right: Preferred download  
 
 https://www.oracle.com/webapps/redirect/signon?nexturl=https://download.oracle.com/otn/java/jdk/11.0.18%2B9/e9f4529b2fa84718a553a389cb2a6629/jdk-11.0.18_windows-x64_bin.zip

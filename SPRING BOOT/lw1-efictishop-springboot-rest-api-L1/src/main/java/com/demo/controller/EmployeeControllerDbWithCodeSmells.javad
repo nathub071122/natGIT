@@ -1,5 +1,4 @@
 package com.demo.controller;
-import com.demo.dto.EmployeeDTO;
 import com.demo.entity.EmployeeEntity;
 import com.demo.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,28 +15,36 @@ public class EmployeeControllerDb {
     @Autowired
     private EmployeeRepository employeeRepository;
     @GetMapping(value = "/employees", produces = {MediaType.APPLICATION_JSON_VALUE})
-    public List<EmployeeEntity> getEmployees() {
+    public List getEmployees() {
         System.out.println("GET ALL EMPLOYEES FROM REPOSITORY");
-        List<EmployeeEntity> employeesList = null;
+        List employeesList = null;
         employeesList = employeeRepository.findAll();
-        employeesList.forEach(employee-> System.out.println(employee));
+        employeesList.forEach((employee)-> {System.out.println(employee);});
         return employeesList;
     }
 
+    //INSTANT PRACTICE
+    public EmployeeEntity getEmployeeById(@PathVariable(value = "id") Integer idFromClient) {
+        System.out.println("GET EMPLOYEE WITH THE GIVEN ID FROM REPOSITORY");
+        return null;
+    }
+
+    public EmployeeEntity updateEmployee(@PathVariable(value = "id") Integer idFromClient, @RequestBody EmployeeEntity employeeFormClient) {
+        System.out.println("UPDATE EMPLOYEE WITH THE GIVEN ID TO REPOSITORY");
+        return null;
+    }
     @PostMapping("/employees")
-    public EmployeeEntity createEmployee(@RequestBody EmployeeDTO employeeFormClient) {
-        EmployeeEntity employeeEntity  = new EmployeeEntity(employeeFormClient.getId(),employeeFormClient.getName(), employeeFormClient.getSalary());
-        return employeeRepository.save(employeeEntity);
-    
+    public EmployeeEntity createEmployee(@RequestBody EmployeeEntity employeeFormClient) {
+        //System.out.println("ADD EMPLOYEE TO REPOSITORY");
+        EmployeeEntity employeeEntity = employeeRepository.save(employeeFormClient);
+        return employeeEntity;
     }
     @DeleteMapping("/employees/{id}")
     public EmployeeEntity deleteEmployeeById(@PathVariable(value = "id") Integer idFromClient) {
-
+        //System.out.println("DELETE EMPLOYEE FROM REPOSITORY");
+//        FETCH THE EMPLOYEE ENTITY FROM THE DATABASE FOR THE SPECIFIC ID
         Optional<EmployeeEntity> employeeEntityOptional = employeeRepository.findById(idFromClient);
-        EmployeeEntity deleteEmployee = new EmployeeEntity();
-        if(employeeEntityOptional.isPresent()){
-             deleteEmployee = employeeEntityOptional.get();
-        }
+        EmployeeEntity deleteEmployee = employeeEntityOptional.get();
         employeeRepository.delete(deleteEmployee);
         return deleteEmployee;
     }
