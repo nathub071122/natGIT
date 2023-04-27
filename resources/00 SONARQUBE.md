@@ -49,9 +49,106 @@ http://localhost:9000/account/security/ > Generate token
 
 :beginner: _**PROJECT ACTIVTIY**_  
 
+:point_right: Add Maven Dependencies for junit & jacoco
+
+```xml
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+		<plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.5</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+<!--                <configuration>-->
+<!--                    <excludes>-->
+<!--                        <exclude>com/demo/entity/*</exclude>-->
+<!--                        <exclude>com/demo/model/*</exclude>-->
+<!--                    </excludes>-->
+<!--                </configuration>-->
+            </plugin>
+```
 
 
-=========================================================
+
+==============================================
+
+:point_right: Add the controller, service and test case  
+
+
+```java
+// Only the test case here......
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package com.demo.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CodeQualityService {
+    public CodeQualityService() {
+    }
+
+    public String getMessage() {
+        String message = "Code Quality and Coverage!";
+        Object object = this.getObject();
+        System.out.println(object.toString());
+        return message;
+    }
+
+    private Object getObject() {
+        return "Object for Testing purpose";
+    }
+}
+
+```
+
+:beginner: _**Clean and test project**_  
+
+```sh
+mvn clean
+mvn compile
+mvn test
+mvn clean compile test
+```
+
+
+:beginner: _**Generate jacoco reports and access them**_  
+```sh
+mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -f pom.xml 
+```
+:point_right: Access reports at d1a-sonarqube-springboot/target/site/jacoco/index.html  
+
+
+
+:beginner: _**Sonar Qube**_  
+- http://localhost:9000/account/security/ > Generate token
+:point_right: Generated Token : 56b30c3ee11dec24e8830a060f4aa9e96d3ee8d5  
+
+
+
+:green_book: **Extra code snippets**  
+
+
 
 pom.xml
 
@@ -83,8 +180,7 @@ pom.xml
 
 ```
 
-project folder with pom.xml> mvn clean 
-project folder with pom.xml> mvn test 
+
 
 
 
@@ -207,8 +303,8 @@ POM WITH EXCLUSIONS OF PACKAGES
 				</executions>
 				<configuration>
 					<excludes>
-						<exclude>com/dss/entity/*</exclude>
-						<exclude>com/dss/model/*</exclude>
+						<exclude>com/demo/entity/*</exclude>
+						<exclude>com/demo/model/*</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
