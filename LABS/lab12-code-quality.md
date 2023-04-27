@@ -4,7 +4,7 @@
 
 :one: _Perform code quality using Sonar Lint_  
 :two: _Write Junit test case for the validation_  
-:three: _Perform code coverage using jacoco plugin_
+:three: _Perform code coverage using jacoco plugin_  
 :four: _Sonarqube is optional_  
   
 
