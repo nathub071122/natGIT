@@ -2,6 +2,8 @@
 :beginner: _**Lab 9:30 - 10:30**_ 
 
 - Perform form-based authentication with a user and password
+:bulb: The solution can be implemented in the capstone or a separate angular application.  
+
 
 :beginner: _**Code base for Reference**_  
 
