@@ -386,7 +386,7 @@ export class LoginComponent implements OnInit {
 </section>  
 ```
 
-:loudspeaker: *httpClient.request*
+:loudspeaker: *Clarifications : httpClient.request*
 ```ts
 this.httpClient.request('GET', URL);
 this.httpClient.get(URL);
